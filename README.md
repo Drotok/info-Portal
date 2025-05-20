@@ -1,4 +1,4 @@
-#  Energie- & Vertrags-Info-Portal (Backend mit FastAPI + PostgreSQL)
+# Energie- & Vertrags-Info-Portal (Backend mit FastAPI + PostgreSQL)
 
 Ein privates Backend-System zur Verwaltung von Strom-, Gas- und Handyverträgen.  
 Ziel ist die Speicherung, Analyse und Prognose von Verbrauchsdaten.
@@ -14,9 +14,7 @@ Ziel ist die Speicherung, Analyse und Prognose von Verbrauchsdaten.
 
 ---
 
-
-
- 3. Projekt starten
+Projekt starten
 
 Im Terminal ausführen:
 
@@ -42,27 +40,15 @@ Verbrauchsdaten modellieren
 
 Diagramme und Prognose vorbereiten
 
-
-
-
-
 ----------- Abhängigkeiten ------------
 pip install fastapi uvicorn sqlalchemy python-dotenv psycopg2-binary
 
-
-
-
-
-
 ## Projektstruktur
 
-```bash
-energy-portal/
-├── .env                # enthält DATABASE_URL (nicht in Git hochladen!)
-├── main.py             # Einstiegspunkt – FastAPI + Test-Endpunkt
-├── database.py         # DB-Session & Verbindung
-├── requirements.txt    # alle nötigen Python-Abhängigkeiten
-├── models/
-│   └── energievertrag.py  # (in Vorbereitung) Vertragsmodell
-
-
+    energy-portal/
+    ├── .env                # enthält DATABASE_URL (nicht in Git hochladen!)
+    ├── main.py             # Einstiegspunkt – FastAPI + Test-Endpunkt
+    ├── database.py         # DB-Session & Verbindung
+    ├── requirements.txt    # alle nötigen Python-Abhängigkeiten
+    ├── models/
+    │   └── energievertrag.py  # (in Vorbereitung) Vertragsmodell

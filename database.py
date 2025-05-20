@@ -11,11 +11,11 @@ load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 if not DATABASE_URL:
-    raise ValueError("❌ DATABASE_URL wurde nicht gefunden! Bitte .env prüfen.")
+    raise ValueError("DATABASE_URL wurde nicht gefunden! Bitte .env prüfen.")
 
-# 🚀 Engine starten
+#  Engine starten
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# 🔨 Basisklasse für Modelle
+#  Basisklasse für Modelle
 Base = declarative_base()

@@ -14,25 +14,6 @@ Ziel ist die Speicherung, Analyse und Prognose von Verbrauchsdaten.
 
 ---
 
-## Projektstruktur
-
-```bash
-energy-portal/
-├── .env                # enthält DATABASE_URL (nicht in Git hochladen!)
-├── main.py             # Einstiegspunkt – FastAPI + Test-Endpunkt
-├── database.py         # DB-Session & Verbindung
-├── requirements.txt    # alle nötigen Python-Abhängigkeiten
-├── models/
-│   └── energievertrag.py  # (in Vorbereitung) Vertragsmodell
-
-
-
-
------------ Abhängigkeiten ------------
-pip install fastapi uvicorn sqlalchemy python-dotenv psycopg2-binary
-
-
-
 
 
  3. Projekt starten
@@ -60,3 +41,28 @@ Endpunkte für POST / GET aufbauen
 Verbrauchsdaten modellieren
 
 Diagramme und Prognose vorbereiten
+
+
+
+
+
+----------- Abhängigkeiten ------------
+pip install fastapi uvicorn sqlalchemy python-dotenv psycopg2-binary
+
+
+
+
+
+
+## Projektstruktur
+
+```bash
+energy-portal/
+├── .env                # enthält DATABASE_URL (nicht in Git hochladen!)
+├── main.py             # Einstiegspunkt – FastAPI + Test-Endpunkt
+├── database.py         # DB-Session & Verbindung
+├── requirements.txt    # alle nötigen Python-Abhängigkeiten
+├── models/
+│   └── energievertrag.py  # (in Vorbereitung) Vertragsmodell
+
+
